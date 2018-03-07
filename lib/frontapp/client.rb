@@ -32,7 +32,8 @@ module Frontapp
       auth_token = options[:auth_token]
       @headers = HTTP.headers({
         Accept: "application/json",
-        Authorization: "Bearer #{auth_token}"
+        Authorization: "Bearer #{auth_token}",
+        "Content-Type" => "multipart/form-data; boundary=----BoundaryString"
       })
     end
 
