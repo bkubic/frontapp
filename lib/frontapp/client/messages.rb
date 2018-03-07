@@ -36,6 +36,7 @@ module Frontapp
                                 :subject,
                                 :body,
                                 :text,
+                                :attachments,
                                 { options: [:tags, :archive] },
                                 :to,
                                 :cc,
